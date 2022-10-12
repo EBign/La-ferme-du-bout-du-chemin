@@ -1,0 +1,415 @@
+html{
+  scroll-behavior: smooth;
+  color: black;
+}
+
+@font-face {
+  font-family: "clasicastriped";
+  src: url("Clasica Striped by Marta van EckDEMO.ttf");
+ }
+body{
+height: 3000px;
+background-image: url(alphamegabgwood.jpg);
+margin: 0;
+text-align: center;
+display: block;
+}
+header{
+  height: 300px;
+}
+.bandeau{
+  width: 100%;
+  height: auto;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+}
+.bandeau img{
+  height: 60px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1{
+  color: dimgray;
+  font-family: arial;
+  font-size: 30px;
+  width: 60%;
+  margin-left: 20%;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+h2{
+  color: rgb(58, 49, 30);
+  font-family: clasicastriped;
+  font-weight: lighter;
+  font-size: 120px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 70px;
+}
+.histoire, .actualites{
+  margin-top: 120px;
+  padding-top: 60px;
+}
+.actualite{
+  padding-bottom: 120px;
+}
+.histoire h2, .actualites h2{
+  font-size: 60px;
+  line-height: 70px;
+}
+.histoire p{
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 48px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.plume{
+  width: 300px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+  margin-left: 5%;
+}
+.gerantes{
+  width: 88%;
+  margin-left: 0;
+  height: auto;
+}
+.la{
+  color: rgb(58, 49, 30);
+  font-family: clasicastriped;
+  font-weight: lighter;
+  font-size: 50px;
+  background-color: transparent;
+  line-height: 100px;
+}
+.bouttonnav{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  visibility: visible;
+  top: 480px;
+  text-align: center;
+  z-index: 7;
+}
+.barre{
+  width: 55px;
+  height: 6px;
+  background-color: #1e90ff;
+  margin-top: 8px;
+}
+#barre3{
+  width: 30px;
+}
+.croix #barre1{
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+.croix #barre2{
+  visibility: hidden;
+}
+.croix #barre3{
+  width: 55px;
+  transform: rotate(-45deg) translateY(-20px) translateX(20px);
+  transition: 0.2s;
+}
+.bouttonnav{
+  cursor: pointer;
+}
+nav{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  visibility: hidden;
+  position: absolute;
+  top: 480px;
+  z-index: 6;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+.montrenav{
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+ul{
+ width: 600px;
+ align-items: center;
+ padding: 0;
+ display: grid;
+ margin: auto;
+}
+li{
+  list-style: none;
+  margin-bottom: 100px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 40px;
+  transition-duration: 0.2s;
+}
+a:hover{
+  scale: 1.05;
+}
+nav a{
+  color: dodgerblue;
+}
+@keyframes haut{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.action{
+  margin-top: 400px;
+}
+.titrevideo{
+  font-size: 30px;
+  color: floralwhite;
+}
+video{
+  width: 100%;
+  margin-top: 20px;
+}
+.cta{
+  margin-top: 100px;
+  border: none;
+  background-color: rgb(58, 49, 30);
+  color: floralwhite;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 100px;
+  font-family: clasicastriped;
+  font-size: 30px;
+  letter-spacing: 2px;
+  visibility: visible;
+  cursor: pointer;
+}
+#responsivecta{
+  visibility: hidden;
+  display: none;
+}
+.descta{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 50px;
+  color: #3a311e;
+  font-size: 30px;
+  width: 60%;
+  margin-left: 20%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+.caroussel{
+  display: flex;
+  overflow-x: scroll;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+#expand{
+  margin-top: 60px;
+}
+#cinq{
+  margin-left: 240px;
+}
+.txtproduits{
+  font-size: 60px;
+  margin-top: 100px;
+}
+.produit{
+  width: auto;
+  height: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.produit img{
+  height: 900px;
+  width: auto;
+}
+.produit p img{
+  width: 90px;
+  height: auto;
+}
+.produit p{
+  width: 510px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 33px;
+}
+.illu{
+  width: 900px;
+  height: auto;
+  margin-left: 12px;
+}
+.imgactu {
+  width: 80%;
+  height: auto;
+}
+.actualites p{
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+.share{
+  width: 90px;
+  margin: 30px;
+  border-radius: 300px;
+  border: rgb(58, 49, 30) 3px solid;
+}
+footer{
+  display: block;
+  height: auto;
+  background-color: rgb(58, 49, 30);
+  color: white;
+  border-top: 2px solid #9e8e85;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer h3, footer a{
+  color: white;
+  font-size: 14px;
+}
+@media screen and (min-width: 1000px){
+  header{
+    height: 60px;
+  }
+  .bandeau{
+    width: 420px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+  }
+  .bandeau img{
+    height: 30px;
+    width: auto;
+  }
+   .txtlogo{
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: auto;
+    font-size: 24px;
+    line-height: 16px;
+   }
+   .la{
+    font-size: 15px;
+    line-height: 24px;
+   }
+   h1{
+    font-size: 12px;
+    font-weight: bold;
+    width: 300px;
+    line-height: 24px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+   }
+   .action{
+    margin-top: 60px;
+   }
+   .cta{
+    visibility: hidden;
+    display: none;
+   }
+   #responsivecta{
+    visibility: visible;
+    font-size: 18px;
+    display: initial;
+    padding: 12px;
+    transition: 0.2s;
+   }
+   #responsivecta:hover{
+    transform: scale(1.05);
+   }
+   .descta{
+    font-size: 15px;
+    width: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    line-height: 24px;
+   }
+   #crop, .produits{
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 97%);
+   }
+   .produits h2, .histoire h2, .actualites h2{
+    font-size: 42px;
+   }
+   .produits h2{
+    margin-bottom: 0;
+   }
+   .produit p{
+    font-size: 15px;
+    width: 240px;
+   }
+   .titreproduit{
+    transform: scale(1.2);
+   }
+   .produit img{
+    height: 360px;
+   }
+   .illu{
+    width: 300px;
+   }
+   .produit p img{
+    width: 30px;
+   }
+   #cinq{
+    margin-left: 30px;
+   }
+   .histoire{
+    padding: 0;
+    width: 720px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+   }
+   .histoire p{
+    line-height: 30px;
+    font-weight: bold;
+   }
+   .plume{
+    width: 90px;
+   }
+   .gerantes{
+    width: 90%;
+    margin-left: 0;
+    height: auto;
+   }
+   .actualites{
+    padding-top: 0;
+   }
+   .carousselactu{
+    display: flex;
+   }
+   .actualite{
+    width: 420px;
+   }
+   .share{
+    width: 42px;
+   }
+}
+
+@media screen and (min-width: 1270px){
+  video{
+    width: 60%;
+  }
+  .share{
+    display: none;
+  }
+  .divbtn{
+    width: 100%;
+  }
+}
