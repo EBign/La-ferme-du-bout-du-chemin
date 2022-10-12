@@ -1,0 +1,1350 @@
+@font-face {
+    font-family: "butlerbold";
+    src: url("Butler_Bold.otf");
+}
+@font-face {
+    font-family: "butlermedium";
+    src: url("Butler_Medium.otf");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    cursor: default;
+    background-image: url(megabgwood.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    text-align: center;
+}
+h1{
+    color: rgb(75, 67, 57);
+    font-family: arial;
+    font-size: 30px;
+    margin-top: 50px;
+}
+p{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.retour{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: black;
+    font-size: 20px;
+}
+header{
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    left: 0%;
+    background-image: url(bgnav.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 3px 0px 11px -4px #000000; 
+    box-shadow: 3px 0px 11px -4px #000000;
+    z-index: 1;
+}
+.logo{
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 4%;
+    margin-right: 6%;
+}
+.bouttonnav{
+    position: absolute;
+    visibility: hidden;
+    margin-top: 70px;
+}
+.barre{
+    width: 60px;
+    height: 6px;
+    background-color: white;
+    margin-top: 8px;
+}
+nav{
+    position: absolute;
+    width: 180px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.verticale{
+    position: absolute;
+    left: 3px;
+    width: 1px;
+    height: 470px;
+    background-color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.deco1{
+    position: absolute;
+    left: 100px;
+    width: 1px;
+    height: 8%;
+    background-color: #9e8e85;
+    top: 17%;
+}
+.deco2{
+    position: absolute;
+    left: 100px;
+    width: 1px;
+    height: 18%;
+    background-color: #9e8e85;
+    top: 76%;
+}
+ul{
+    display: block;
+    padding: 0;
+    padding-bottom: 2px;
+}
+li{
+    font-family: butlerbold;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 18px;
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+li ul li:hover, .liseul:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition-duration: 0.5s;
+}
+.titregamme{
+    font-size: 19px;
+}
+.titregammeplus{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+a{
+    text-decoration: none;
+    cursor: default;
+    color: white;
+    cursor: pointer;
+}
+li ul li{
+    font-size: 16px;
+    font-family: butlermedium;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    cursor: default;
+}
+.classeproduit{
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+}
+.classeproduit:hover{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    transition-duration: 0.5s;
+   cursor: pointer;
+}
+.accueil{
+    display: flex;
+    margin-left: 200px;
+    overflow: hidden;
+}
+.videoplay{
+    width: 80%;
+    top: 0;
+    z-index: 1;
+}
+.txtvideo{
+    padding-left: 220px;
+    margin-top: 30px;
+    font-family: arial;
+    font-size: 20px;
+    color: black;
+    z-index: 2;
+    cursor: pointer;
+}
+.stvideo{
+    padding-left: 220px;
+    margin-top: -10px;
+    font-family: arial;
+    font-size: 12px;
+    color: dimgray;
+    z-index: 2;
+}
+.follow{
+    background-color: #5e4f46;
+    padding: 10px;
+}
+.deco3{
+    margin-top: 20px;
+    width: 600px;
+    height: 1px;
+    background-color: #000000;
+    margin-left: 220px;
+}
+.coordo{
+    width: 20%;
+    display: block;
+    top: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: arial;
+    font-weight: bold;
+    font-weight: bold;
+    padding: 0.5%;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+.text{
+    font-size: 14px;
+}
+.coordo img{
+    width: 30%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.text{
+    margin-top: 20px;
+}
+.scrolldown{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: -50px;
+    animation: haut 2s infinite;
+}
+.scrolldown img{
+position: absolute;
+transform: translateX(-200px);
+}
+.grandtitre{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.notregamme{
+    position: relative;
+    height: 300px;
+    margin-left: 200px;
+    overflow: hidden;
+    margin-top: 50px;
+    padding-top: 950px;
+}
+.notregamme img{
+    position: absolute;
+    width: 100%;
+    margin-left: 20px;
+}
+#bggammesm{
+    visibility: hidden;
+}
+.imgcaroussel{
+    width: 90%;
+    margin-left: 5%; 
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: -250px;
+    }
+.txthistoire, .txtactualite{
+    font-family: butlerbold;
+    font-size: 50px;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+.produitgamme{
+    display: block;
+    text-align: center;
+}
+.produitgammefantome{
+    display: none;
+    margin-right: 10%;
+}
+.produitgamme img{
+    height: 500px;
+    margin-bottom: 0px;
+}
+.produitgammefantome img{
+    height: 0px;
+    margin-bottom: 0px; 
+}
+.produitgamme p{
+    width: 200px;
+    margin: auto;
+    text-align: justify;
+}
+.desgeneral{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.generalproduit{
+    margin-left: 50px;
+}
+button{
+    width: 120px;
+    font-family: arial;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+}
+.centbutton{
+    width: 100%;
+    text-align: center;
+}
+.caroussel{
+    margin-left: 200px;
+    height: auto;
+    padding-bottom: 30px;
+    display: block;
+}
+#calvados{
+    margin-bottom: -50px;
+}
+#pommeau{
+   margin-top: 250px;
+}
+#vinaigre, #jusdepomme{
+    margin-top: 330px;
+}
+#pommeauvisible{
+    margin: auto;
+    margin-top: -250px;
+    padding-left: 500px;
+}
+#jusdepommevisible, #vinaigrevisible{
+    margin: auto;
+    margin-top: -200px;
+    padding-left: 500px;
+}
+#cidre{
+    margin-top: 150px;
+}
+.ficheproduithaut{
+    height: 600px;
+    margin-left: 200px;
+    display: flex;
+    margin-top: -900px;
+    height: auto;
+    overflow: hidden;
+}
+.ficheproduit{
+    height: 600px;
+    position: relative;
+    margin-left: 200px;
+    display: flex;
+    padding-top: 100px;
+    margin-bottom: 200px;
+}
+.cadre{
+    margin-left: 2%;
+    width: 13%;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.cadre img{
+    width: 100%;
+    height: auto;
+}
+.varianteshaut{
+    margin-top: 40px;
+    width: 9%;
+    margin-left: 2%;
+}
+.variantes{
+    margin-top: 40px;
+    width: 7%;
+    margin-left: 2%;
+}
+.titrevariante{
+    background-color: #5e4f46;
+    color: white;
+    height: 22px;
+    border-radius: 10px;
+    text-align: center;
+}
+#aoc{
+    background-color: #273a24;
+    color: #e4e7de;
+}
+#brut{
+    background-color: #b62039;
+}
+#demisec{
+    background-color: #ed7e60;
+}
+#doux{
+    background-color: #98dcd1;
+}
+.desvariante{
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.desproduithaut{
+    width: 32%;
+    margin-left: 4%;
+    margin-top: 15%;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: butlermedium;
+    text-align: center;
+    scrollbar-width: 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+#cidre{
+    margin-top: 200px;
+}
+.desproduit{
+    position: absolute;
+    width: 27%;
+    margin-left: 4%;
+    margin-top: 15%;
+    bottom: 0;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: butlermedium;
+    text-align: justify;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    padding: 20px;
+}
+#pommeau{
+    margin-top: 200px;
+}
+#caracpommeau{
+    width: fit-content;
+    background-color: #835635;
+    padding-left: 2px;
+    padding-right: 5px;
+}
+#jusdepomme{
+    margin-top: 200px;
+}
+#caracjusdepomme{
+    width: fit-content;
+    background-color: #bf5517;
+    padding-left: 2px;
+    padding-right: 5px;
+}
+#vinaigre{
+    margin-top: 200px;
+}
+#caracvinaigre{
+    width: fit-content;
+    background-color: #572691;
+    padding-left: 2px;
+    padding-right: 5px;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+.desproduit::-webkit-scrollbar {
+    width: 0px;
+}
+.desproduit::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    }
+.desproduithaut::-webkit-scrollbar {
+    width: 0px;
+}
+.desproduithaut::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    }
+.illuproduithaut{
+    width: 25%;
+    object-fit: cover;
+    margin-left: 4%;
+    margin-top: 40px;
+    bottom: 0;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    border-radius: 20px;
+}
+.illuproduit{
+    position: absolute;
+    width: 25%;
+    left: 66%;
+    margin-top: 40px;
+    bottom: 0;
+    font-size: 20px;
+    font-family: butlermedium;
+    text-align: justify;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    border-radius: 20px;
+}
+.titreficheproduit{
+    font-size: 300%;
+    margin-top: 10px;
+    font-family: butlermedium;
+    color: #5e4f46;
+}
+.cidreaoc{
+    width: 100%;
+    height: auto;
+    animation: cidreaoc 6s infinite;
+}
+@keyframes cidreaoc{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes cidreaoc{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.cidredoux{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: cidredoux 6s infinite;
+}
+@keyframes cidredoux{
+    0%{
+        opacity: 0;
+    }
+    25%{
+       opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-moz-keyframes cidredoux{
+    0%{
+        opacity: 0;
+    }
+    25%{
+       opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.cidredemisec{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: cidredemisec 6s infinite;
+}
+@keyframes cidredemisec{
+    0%{
+        opacity: 0;
+    }
+    25%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-moz-keyframes cidredemisec{
+    0%{
+        opacity: 0;
+    }
+    25%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.cidrebrut{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: cidrebrut 6s infinite;
+}
+@keyframes cidrebrut{
+    0%{
+        opacity: 0;
+    }
+    50%{
+       opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-moz-keyframes cidrebrut{
+    0%{
+        opacity: 0;
+    }
+    50%{
+       opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.vousaussi{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+}
+.imgproduit{
+    width: 40%;
+    text-align: center;
+    margin-top: 50px;
+}
+.imgproduit img{
+    height: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.venteferme{
+    font-family: arial;
+    font-size: 18px;
+}
+.bold{
+    font-weight: bold;
+}
+.histoire{
+    padding-bottom: 30px;
+    margin-left: 200px;
+    z-index: 3;
+    margin-top: -28px;
+    }
+.histoireflex{
+    display: flex;
+    height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.imghistoireflex{
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 300%;
+    height: 210px;
+    object-fit: cover;
+    overflow: hidden;
+    justify-content: space-around;
+}
+.histoire h4{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.histoire p{
+    height: max-content;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.groupeactualite{
+    height: auto;
+    margin-left: 200px;
+}
+.actualite{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 5%;
+}
+.actualite img{
+    margin-left: 50px;
+}
+.date{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.jour{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    font-family: butlerbold;
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #9e8e85;
+}
+.mois{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 80px;
+    font-family: butlerbold;
+    font-size: 20px;
+    color: #9e8e85;
+    margin-right: 5px;
+}
+.pro{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 100px;
+    font-family: butlerbold;
+    font-size: 20px;
+    color: #9e8e85;
+    transform: rotate(270deg);
+}
+.actualite img{
+    width: 180px;
+    border-radius: 10px;
+}
+.desactualite{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.map{
+    margin-left: 200px;
+    margin-bottom: 80px;
+}
+iframe{
+    width: 94%;
+    margin-left: 3%;
+    border-radius: 10px;
+}
+footer{
+    display: block;
+    height: auto;
+    padding: 20px;
+    color: #9e8e85;
+    background-color: #dccec6;
+    border-top: 2px solid #9e8e85;
+    text-align: center;
+    font-family: 14px;
+}
+.remonter{
+    position: fixed;
+    top: 90%;
+    left: 87%;
+    height: 150px;
+    z-index: 3;
+    transition: 0.5s;
+    display: none;
+  }
+.remonter:hover{
+    animation: haut 2s infinite;
+}
+@keyframes haut{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(20px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+
+
+@media only screen and (max-width: 1760px){
+    .titreficheproduitpommeau{
+        font-size: 170px;
+        margin-left: 50px;
+        margin-top: 90px;
+        font-family: butlermedium;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #9e8e85;
+    }
+    .titreficheproduitpomme{
+        font-size: 120px;
+        margin-left: 50px;
+        margin-top: 90px;
+        font-family: butlermedium;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #9e8e85;
+    }
+    .titreficheproduitvinaigre{
+        font-size: 100px;
+        margin-left: 50px;
+        margin-top: 90px;
+        font-family: butlermedium;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #9e8e85;
+    }
+    .ficheproduithaut{
+        margin-top: -700px;
+    }
+
+    .notregamme{
+        position: relative;
+        height: 300px;
+        margin-left: 200px;
+        overflow: hidden;
+        margin-top: 50px;
+        padding-top: 650px;
+    }
+    .varianteshaut{
+        margin-top: 40px;
+        width: 11%;
+        margin-left: 2%;
+    }
+    .coordo img{
+        width: 30%;
+        margin-top: 20px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .text{
+        font-size: 12px; 
+        margin: 5px;
+    }
+    .titreficheproduit{
+        font-size: 200%;
+    }
+}
+
+
+@media only screen and (max-width: 1450px){
+    .ficheproduithaut{
+        position: relative;
+    }
+    .desproduithaut{
+        position: absolute;
+        margin-top: 50px;
+        left: 38%;
+        height: 40%;
+        width: 50%;
+        margin-bottom: 10%;
+        padding: 0px;
+        font-size: 20px;
+    }
+    #cidre .desproduithaut{
+        margin-top: 50px;
+    }
+    .illuproduithaut{
+        position: absolute;
+        top: 0%;
+        left: 38%;
+        height: 100%;
+        width: 50%;
+        margin-bottom: 10%;
+        border-radius: 3px;
+        clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+    }
+    .varianteshaut{
+        width: 20%;
+    }
+    .titrevariante{
+        width: 60%;
+    }
+    .deco1{
+        height: 6%;
+        top: 17%;
+    }
+    .deco2{
+        height: 18%;
+        top: 79%;
+    }
+    .notregamme{
+        height: 400px;
+        padding-top: 400px;
+    }
+    .ficheproduithaut{
+        margin-top: -500px;
+    }
+    .histoireflex{
+        margin-bottom: 0;
+        display: block;
+        height: auto;
+    }
+    .histoireflex img{
+        width: 90%;
+        height: 300px;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+     .deco1, .deco2{
+         visibility: hidden;
+     }
+     nav, .verticale{
+         top: 55%;
+     }
+}
+@media only screen and (max-height: 650px) {
+    nav, .verticale{
+        top: 60%;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .text{
+        font-size: 11px;
+        margin: 2px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    header{
+        position: relative;
+        width: 100%;
+        height: 350px;
+        text-align: center;
+        box-shadow: none;
+    }
+    h1{
+        margin-left: 0;
+    }
+    .montreheader{
+        height: 1100px;
+    }
+    .logo{
+        margin: 0;
+        margin-top: 30px;
+        height: 150px;
+        width: auto;
+    }
+    .bouttonnav{
+        visibility: visible;
+        left: 50%;
+        top: 190px;
+        transform: translateX(-50%);
+        cursor: default;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        z-index: 5;
+        cursor: pointer;
+    }
+    .croix #barre1{
+        transform: rotate(45deg);
+        transition: 0.2s;
+    }
+    .croix #barre2{
+        visibility: hidden;
+    }
+    .croix #barre3{
+        transform: rotate(-45deg) translateY(-20px) translateX(20px);
+        transition: 0.2s;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .montrenav{
+        padding-top: 50px;
+        width: 80%;
+        margin-left: 9%;
+    }
+    .verticale, .deco1, .deco2{
+        visibility: hidden;
+    }
+    ul{
+        margin: 0;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        visibility: hidden;
+    }
+    .montreul{
+        visibility: visible;
+    }
+    .montreul li{
+        visibility: visible;
+    }
+    .montreul li ul li{
+        margin: 20px;
+    }
+    .montreul .calvados:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    .montreul .cidredoux:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    .montreul .cidredemisec:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    .montreul .cidrebrut:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    .montreul .jusdepomme:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    li{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    li ul li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .accueil{
+        margin-left: 0px;
+    }
+    .scrolldown{
+        display: none;
+    }
+    .gamme{
+        margin-left: 0px;
+        width: 100%;
+        justify-content: initial;
+    }
+    .txtgamme{
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    .imgcaroussel{
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        overflow-x: auto;
+    }
+    .imgcaroussel::-webkit-scrollbar {
+       width: 50px;
+       height: 20px;
+       color: black;
+    }
+    .produit{
+        margin-left: 0px;
+        height: 1570px;
+        display: block;
+        text-align: center;
+    }
+    .titreproduit{
+        font-size: 24px;
+        font-family: arial;
+        color: white;
+    }
+    .description{
+        padding: 0px;
+        width: 100%;
+        padding-top: 10px;
+    }
+    .vousaussi{
+        margin-top: 750px;
+    }
+    .pproduit{
+    width: 100%;
+    }
+    .imgproduit{
+        width: 100%;
+        margin-top: -1700px;
+    }
+    .imgproduit img{
+        width: 60%;
+        height: auto;
+    }
+    .ficheproduithaut{
+        margin-left: 0px;
+        margin-top: 0;
+    }
+    .histoire, .groupeactualite, .map{
+        margin-left: 0px;
+    }
+    .histoire p{
+        font-size: 15px;
+    }
+    .histoire{
+        margin-top: 30px;
+    }
+    .cadre{
+        width: 18%;
+    }
+    .notregamme{
+        margin-left: 0px;
+        padding-top: 200px;
+        margin-top: -100px;
+    }
+    .desproduithaut, .illuproduithaut{
+        left: 42%;
+    }
+    .accueil{
+        display: block;
+        margin-left: 0px;
+    }
+    .videoplay{
+        width: 100%;
+    }
+    .coordo{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .text{
+        font-size: 24px;
+    }
+    .coordo .img{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .coordo .img img{
+        width: 10%;
+        height: auto;
+        margin: 0;
+    }
+    #bggammesm{
+        visibility: visible;
+    }
+    #bggamme{
+        visibility: hidden;
+    }
+    footer{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .logo{
+        width: 300px;
+        height: auto;
+    }
+    .titregamme{
+        font-size: 34px;
+    }
+    .titregammeplus{
+        font-size: 38px;
+    }
+    li ul li{
+        font-size: 28px;
+    }
+    .ficheproduithaut{
+        display: block;
+    }
+    .cadre{
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: inline-block;
+    }
+    .varianteshaut{
+        width: 43%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .titrevariante{
+        font-size: 32px;
+        height: 45px;
+        border-radius: 25px;
+    }
+    .desvariante{
+        font-size: 32px;
+    }
+    .illuproduithaut, #cidre .illuproduithaut{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        position: initial;
+        border-radius: 10px;
+        margin-top: -700px;
+        clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
+    }
+    .desproduithaut{
+        position: initial;
+        width: 90%;
+        margin-left: 5%;
+        height: max-content;
+        margin-top: 200px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .histoire p{
+        font-size: 16px;
+        padding: 20px;
+    }
+    .groupeactualite{
+        margin-top: -50px;
+    }
+    .date, .actualite img, .desactualite{
+        display: inline-block;
+    }
+    .desactualite{
+        width: 80%;
+    }
+    .desactualite h4{
+        margin-top: 0;
+    }
+    .desactualite p{
+        margin-bottom: 0;
+    }
+    .actualite{
+        display: block;
+    }
+    .date{
+        position: relative;
+        width: 30%;
+        height: 400px;
+        margin: 5%;
+        margin-top: -500px;
+    }
+    .jour{
+        font-size: 80px;
+        top: 50px;
+        left: 50px;
+    }
+    .mois, .pro{
+        font-size: 40px;
+    }
+    .mois{
+        top: 50px;
+        left: 150px;
+    }
+    .pro{
+        top: 200px;
+        left: 200px;
+    }
+    .actualite img{
+        width: 40%;
+        margin: 5%;
+        height: auto;
+    }
+    .desactualite{
+        font-size: 34px;
+    }
+    .coordo{
+        padding-top: 50px;
+    }
+    .text{
+        font-size: 13px;
+    }
+    .titregamme{
+        font-size: 46px;
+        font-weight: bold;
+    }
+    .titregammeplus{
+        font-size: 46px;
+        font-weight: bold;
+    }
+    li ul li{
+        font-size: 34px;
+    }
+    footer{
+        font-size: 30px;
+    }
+    .remonter{
+        display: initial;
+    }
+    .titreficheproduit{
+        font-size: 400%;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .notregamme{
+        padding-top: 100px;
+        margin-bottom: -100px;
+    }
+    .cadre{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .varianteshaut{
+        width: 40%;
+    }
+    .actualite img{
+        height: fit-content;
+    }
+    .logo{
+        padding-bottom: 100px;
+    }
+    nav{
+        padding-right: 3%;
+        padding-top: 50px;
+    }
+}
